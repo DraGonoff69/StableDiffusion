@@ -1,17 +1,17 @@
 {
-  "name": "openai-gpt3",
-  "author": "Nikhil Mohite",
+  "name": "imageprompt",
+  "author": "Ayush Mishra",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nkilm/openai-gpt3"
+    "url": ""
   },
   "description": "Clone of GPT3 Website using Reactjs",
   "version": "0.1.0",
   "keywords": [
     "reactjs",
     "modern ui/ux",
-    "gpt3",
-    "openai"
+    "images",
+    "generative ai"
   ],
   "private": false,
   "dependencies": {
