@@ -1,7 +1,7 @@
 import React from 'react'
-import { Article } from '../../components'
+import Article from '../../components/article/Article'
 import "./blog.css"
-import { blog02, blog03, blog04 } from "./imports.js"
+
 
 const Blog = () => {
   return (
@@ -17,9 +17,9 @@ const Blog = () => {
                     <Article imgUrl={blog04} date="Jul 05,2022" title="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
         </div> */}
         <div className="gpt3__blog-container_groupB">
-          <Article imgUrl={blog02} date="Chintlapudi Sushmanth" title="Machine Learning Engineer" />
-          <Article imgUrl={blog03} date="Ayush Mishra" title="Web Devloper Engineer" />
-          <Article imgUrl={blog04} date="Akhil Chandra" title="Machine Learning Engineer" />
+          <Article imgUrl="src\assets\blog02.png" date="Chintlapudi Sushmanth" title="Machine Learning Engineer" />
+          <Article imgUrl="src\assets\blog03.png" date="Ayush Mishra" title="Web Devloper Engineer" />
+          <Article imgUrl="src\assets\blog04.png" date="Akhil Chandra" title="Machine Learning Engineer" />
         </div>
       </div>
     </div>

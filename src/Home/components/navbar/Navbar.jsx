@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import "./navbar.css"
-import logo from "../../assets/logo1.jpg"
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri"
+// import { RiMenu3Line, RiCloseLine } from "react-icons/ri"
 // import Login from ''
 // import Login from '../login/Login'
 const Menu = () => (
@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <img src={logo} alt="Logo" style={{ width: '120px', height: '92px' }} />
+          <img src="src\assets\logowhite.png" alt="Logo" className='' />
           {/* <p>Image Prompt</p> */}
         </div>
         <div className="gpt3__navbar-links_container">
@@ -34,24 +34,26 @@ const Navbar = () => {
         <div className="gpt3__navbar-wrapper">
 
           <div className="gpt3__navbar-sign">
-            <p>Sign in</p>
-            <button type='button'>Sign up</button>
+                  <Link to="/Landing">
+                  <button type='button'>Login</button>
+                  </Link>
           </div>
           {/* Responsive part for mobiles devices */}
           {/* hamburger menu */}
           <div className="gpt3__navbar-menu">
-            {toggleMenu
+            {/* {toggleMenu
               ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
               : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
-            }
+            } */}
             {toggleMenu &&
               <div className="gpt3__navbar-menu_container scale-up-center">
                 <div className="gpt3__navbar-menu_container-links">
                   <Menu />
                 </div>
                 <div className="gpt3__navbar-menu_container-links-sign">
-                  <p>Login</p>
-                  <button type='button'>Sign up</button>
+                  <Link to="/Landing">
+                  <button type='button'>Login</button>
+                  </Link>
                 </div>
               </div>
             }

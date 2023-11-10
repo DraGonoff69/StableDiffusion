@@ -1,7 +1,8 @@
 import React from 'react'
 import "./header.css"
+import { Link } from "react-router-dom";
 // import people from "../../assets/people.png"
-import ai from "../../assets/ai.png"
+
 
 const Header = () => {
   return (
@@ -9,11 +10,13 @@ const Header = () => {
       <div className="gpt3__header-content">
         <h1 className="gradient__text">Let&apos;s Build Something amazing with ImagePrompt</h1>
         <p>
-ImagePrompt: Your Creative Hub! Generate visuals from text and enhance your images with our machine learning models. Be a pioneer, sign up for exclusive early access today!</p>
+          ImagePrompt: Your Creative Hub! Generate visuals from text and enhance your images with our machine learning models. Be a pioneer, sign up for exclusive early access today!</p>
 
         <div className="gpt3__header-content__input">
           <input type="email" placeholder="Your Email Address" />
-          <button type="button">Get Started</button>
+          <Link to="/Contact">
+            <button type="button">Get Started</button>
+          </Link>
         </div>
 
         {/* <div className="gpt3__header-content__people">
@@ -23,7 +26,7 @@ ImagePrompt: Your Creative Hub! Generate visuals from text and enhance your imag
 
       </div>
       <div className="gpt3__header-image">
-        <img src={ai} alt="AI" />
+        <img src="src\assets\ai.png" alt="AI" />
       </div>
     </div>
   )

@@ -3,9 +3,9 @@ import "./App.css"
 import {Blog,Features,Footer,Header,Possibility,WhatGPT3} from "./containers";
 import {CTA,Navbar} from "./components";
 
-function App() {
+function Index() {
   return (
-    <div className="App">
+    <div className="Index">
       <div className="gradient__bg">
         <Navbar/>
         <Header/>
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Index;
